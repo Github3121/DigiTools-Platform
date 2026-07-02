@@ -1,0 +1,61 @@
+{
+    "sectionTitle": "Simple, Transparent Pricing",
+    "sectionDescription": "Choose the plan that fits your needs. Upgrade or downgrade anytime.",
+    "plans": [
+        {
+            "id": 1,
+            "name": "Starter",
+            "subtitle": "Perfect for getting started",
+            "price": 0,
+            "currency": "USD",
+            "billing": "Monthly",
+            "badge": null,
+            "buttonText": "Get Started Free",
+            "buttonType": "primary",
+            "features": [
+                "Access to 10 free tools",
+                "Basic templates",
+                "Community support",
+                "1 project per month"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Pro",
+            "subtitle": "Best for professionals",
+            "price": 29,
+            "currency": "USD",
+            "billing": "Monthly",
+            "badge": "Most Popular",
+            "buttonText": "Start Pro Trial",
+            "buttonType": "secondary",
+            "features": [
+                "Access to all premium tools",
+                "Unlimited templates",
+                "Priority support",
+                "Unlimited projects",
+                "Cloud sync",
+                "Advanced analytics"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Enterprise",
+            "subtitle": "For teams and businesses",
+            "price": 99,
+            "currency": "USD",
+            "billing": "Monthly",
+            "badge": null,
+            "buttonText": "Contact Sales",
+            "buttonType": "primary",
+            "features": [
+                "Everything in Pro",
+                "Team collaboration",
+                "Custom integrations",
+                "Dedicated support",
+                "SLA guarantee",
+                "Custom branding"
+            ]
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 
-const Product = ({product}) => {
+const Product = ({product, addToCart, cartItems}) => {
     return (
         <div className='flex flex-col relative items-start justify-center gap-4 w-[380px] h-auto p-[24px] rounded-[16px] border-3 border-[#F2F2F2] hover:shadow-lg hover:shadow-[#4F39F6] hover:scale-101 duration-300'>
             <span className='absolute top-[10px] right-[10px] bg-[#FEF3C6] text-[#BB4D00] rounded-full text-[14px] py-[6px] px-[12px]'>{product.tag}</span>
@@ -14,7 +14,7 @@ const Product = ({product}) => {
                     <li key={index} className='flex items-center gap-2'><Check size={20} color="#30B868" />{feature}</li>
                 ))}
             </ul>
-            <button className='btn w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white text-4 font-bold py-[15px]'>Buy Now</button>
+            <button onClick={() => addToCart(product)} disabled={cartItems.some(item => item.id === product.id)} className={`btn w-full rounded-full text-white text-4 font-bold py-[15px] ${cartItems.some(item => item.id === product.id) ? 'bg-gray-500 cursor-not-allowed' : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'}`}>{cartItems.some(item => item.id === product.id) ? 'Added to Cart' : 'Buy Now'}</button>
         </div>
     );
 };

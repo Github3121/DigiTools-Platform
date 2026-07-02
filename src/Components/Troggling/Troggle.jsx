@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Troggle = ({ toggle, setToggle }) => {
+const Troggle = ({ toggle, setToggle, cartItems }) => {
     return (
         <div>
             <div className="mt-[120px] mx-[200px]">
@@ -10,7 +10,7 @@ const Troggle = ({ toggle, setToggle }) => {
                     <div className="relative flex w-fit p-1 border-2 border-[#F6F6F6] rounded-full bg-white">
                         <div className={`absolute top-1 bottom-1 w-[calc(50%-4px)] rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] transition-all duration-500 ease-[cubic-bezier(0.68,-0.2,0.27,1.55)] hover:scale-105 ${toggle ? "left-1" : "left-[calc(50%)]"}`} />
                         <button onClick={() => setToggle(true)} className={`relative z-10 px-6 py-[14px] text-[16px] font-bold rounded-full transition-all duration-500 cursor-pointer ${toggle ? "text-white scale-105" : "text-[#4F39F6]"}`}>Products</button>
-                        <button onClick={() => setToggle(false)} className={`relative z-10 px-6 py-[14px] text-[16px] font-bold rounded-full transition-all duration-500 cursor-pointer ${!toggle ? "text-white scale-105" : "text-[#4F39F6]"}`}>Cart (2)</button>
+                        <button onClick={() => setToggle(false)} className={`relative z-10 px-6 py-[14px] text-[16px] font-bold rounded-full transition-all duration-500 cursor-pointer ${!toggle ? "text-white scale-105" : "text-[#4F39F6]"}`}>Cart ({cartItems.length})</button>
                     </div>
                 </div>
             </div>

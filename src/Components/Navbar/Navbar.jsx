@@ -2,9 +2,9 @@ import './Navbar.css';
 import React from 'react';
 import { FiShoppingCart } from "react-icons/fi";
 
-const Navbar = () => {
+const Navbar = ({cartItems}) => {
     return (
-        <div className="navbar bg-base-100 flex justify-between items-center shadow-sm md:px-50 py-[26px]">
+        <div className="navbar bg-base-100 flex justify-between items-center shadow-sm md:px-50 py-[26px] absolute top-0 left-0 right-0 z-10000 fixed">
             <div className="">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -32,7 +32,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="flex gap-[16px] items-center">
-                <button className='font-semibold cursor-pointer flex justify-center items-center'><FiShoppingCart /></button>
+                <button className='font-semibold cursor-pointer flex justify-center items-center relative'><FiShoppingCart /><span className="flex items-center justify-center text-center w-4 h-4 bg-red-500 rounded-full absolute -top-3 -right-3 text-[10px] font-bold text-white">{cartItems.length}</span></button>
                 <a className="bg-transparent border-0 text-4 font-semibold cursor-pointer" href='/login'>Login</a>
                 <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-4 text-white font-semibold py-[12.5px] px-[16px] rounded-full">Get Started</a>
             </div>
