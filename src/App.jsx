@@ -11,6 +11,7 @@ import Workflow from './Components/Workflow/Workflow';
 import TheEnd from './Components/TheEndFooter/TheEnd';
 import AddedCarts from './Components/AddedCarts/AddedCarts';
 import { RotatingLines } from 'react-loader-spinner';
+import { toast, ToastContainer } from 'react-toastify';
 
 function App() {
 
@@ -31,7 +32,6 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
   const addToCart = (product) => {
     setCartItems((prevItems) => [...prevItems, product]);
-    alert(`${product.name} has been added to the cart!`);
   };
   console.log(cartItems);
 
@@ -42,6 +42,9 @@ function App() {
   const clearCart = () => {
     setCartItems([]);
   };
+
+  const notify = (getstatus) => toast(`${getstatus}`);
+
 
   return (
     <>
@@ -64,7 +67,7 @@ function App() {
             wrapperStyle={{}}
             wrapperClass=""
           />}>
-            {toggle ? <Products productsPromise={productsPromise} addToCart={addToCart} cartItems={cartItems} /> : <AddedCarts cartItems={cartItems} removeFromCart={removeFromCart} clearCart={clearCart} />}
+            {toggle ? <Products productsPromise={productsPromise} addToCart={addToCart} cartItems={cartItems} notify={notify} /> : <AddedCarts cartItems={cartItems} removeFromCart={removeFromCart} clearCart={clearCart} notify={notify} />}
           </Suspense>
         </div>
         <ShortSummry />
@@ -75,6 +78,7 @@ function App() {
         <TheEnd />
         <p className='pt-4 mx-4 border-t-[1px] border-[#fafafa6b]'>© 2023 Your Company. All rights reserved.</p>
       </footer>
+      <ToastContainer />
     </>
   )
 }
