@@ -4,7 +4,7 @@ import { FiShoppingCart } from "react-icons/fi";
 
 const Navbar = ({cartItems}) => {
     return (
-        <div className="navbar bg-base-100 flex justify-between items-center shadow-sm md:px-50 py-[26px] absolute top-0 left-0 right-0 z-10000 fixed">
+        <div className="navbar bg-base-100 flex justify-between items-center shadow-sm md:px-50 py-[26px] z-10000">
             <div className="">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
