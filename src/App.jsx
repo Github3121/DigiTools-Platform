@@ -10,6 +10,7 @@ import Pricing from './Components/Pricing/Pricing';
 import Workflow from './Components/Workflow/Workflow';
 import TheEnd from './Components/TheEndFooter/TheEnd';
 import AddedCarts from './Components/AddedCarts/AddedCarts';
+import { RotatingLines } from 'react-loader-spinner';
 
 function App() {
 
@@ -52,7 +53,17 @@ function App() {
         <Rating />
         <div className='flex flex-col items-center justify-center gap-10'>
           <Troggle toggle={toggle} setToggle={setTroggle} cartItems={cartItems} />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<RotatingLines
+            visible={true}
+            height="40"
+            width="40"
+            color="grey"
+            strokeWidth="5"
+            animationDuration="0.75"
+            ariaLabel="rotating-lines-loading"
+            wrapperStyle={{}}
+            wrapperClass=""
+          />}>
             {toggle ? <Products productsPromise={productsPromise} addToCart={addToCart} cartItems={cartItems} /> : <AddedCarts cartItems={cartItems} removeFromCart={removeFromCart} clearCart={clearCart} />}
           </Suspense>
         </div>
