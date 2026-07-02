@@ -1,0 +1,154 @@
+[
+    {
+        "id": 1,
+        "name": "Starter Resume Kit",
+        "description": "Create a professional resume with ATS-friendly templates and instant PDF export.",
+        "price": 9.99,
+        "period": "One-Time",
+        "tag": "New",
+        "tagType": "new",
+        "features": [
+            "25+ ATS-friendly templates",
+            "Export to PDF",
+            "Cover letter builder",
+            "Unlimited edits",
+            "Print-ready format"
+        ],
+        "icon": "FileText",
+        "image": "https://i.ibb.co.com/nq0TBRfg/writing-2327400-1.png",
+        "alt": "writing-2327400-1.png"
+    },
+    {
+        "id": 2,
+        "name": "Career Pro",
+        "description": "Everything you need to build resumes, cover letters, and manage job applications.",
+        "price": 7.99,
+        "period": "Month",
+        "tag": "Popular",
+        "tagType": "popular",
+        "features": [
+            "100+ premium templates",
+            "AI resume suggestions",
+            "Cover letter generator",
+            "Job application tracker",
+            "Cloud sync"
+        ],
+        "icon": "Briefcase",
+        "image": "https://i.ibb.co.com/pBzFKfGC/design-tool.png",
+        "alt": "design-tool.png"
+    },
+    {
+        "id": 3,
+        "name": "Ultimate Career Suite",
+        "description": "Complete career toolkit with AI optimization and interview preparation.",
+        "price": 79.99,
+        "period": "Year",
+        "tag": "Best Seller",
+        "tagType": "best-seller",
+        "features": [
+            "Everything in Career Pro",
+            "AI interview preparation",
+            "LinkedIn profile optimizer",
+            "Priority support",
+            "Unlimited downloads"
+        ],
+        "icon": "Award",
+        "image": "https://i.ibb.co.com/FTPLLkf/operation.png",
+        "alt": "operation.png"
+    },
+    {
+        "id": 4,
+        "name": "Portfolio Builder",
+        "description": "Design a stunning personal portfolio website without coding.",
+        "price": 14.99,
+        "period": "One-Time",
+        "tag": "Trending",
+        "tagType": "popular",
+        "features": [
+            "50+ portfolio themes",
+            "Custom domain support",
+            "Responsive design",
+            "SEO optimization",
+            "One-click publishing"
+        ],
+        "icon": "Globe",
+        "image": "https://i.ibb.co.com/8n7pcSn4/social-media.png",
+        "alt": "social-media.png"
+    },
+    {
+        "id": 5,
+        "name": "Freelancer Pro",
+        "description": "Manage freelance projects, invoices, and client communication in one place.",
+        "price": 12.99,
+        "period": "Month",
+        "tag": "Recommended",
+        "tagType": "popular",
+        "features": [
+            "Unlimited clients",
+            "Invoice generator",
+            "Project dashboard",
+            "Time tracking",
+            "Payment reminders"
+        ],
+        "icon": "Laptop",
+        "image": "https://i.ibb.co.com/nq0TBRfg/writing-2327400-1.png",
+        "alt": "writing-2327400-1.png"
+    },
+    {
+        "id": 6,
+        "name": "Business Premium",
+        "description": "Advanced productivity tools for teams and growing businesses.",
+        "price": 149.99,
+        "period": "Year",
+        "tag": "Enterprise",
+        "tagType": "best-seller",
+        "features": [
+            "Team collaboration",
+            "Role-based access",
+            "Analytics dashboard",
+            "Priority customer support",
+            "Unlimited cloud storage"
+        ],
+        "icon": "Building2",
+        "image": "https://i.ibb.co.com/1fQd0Lnv/portfolio.png",
+        "alt": "portfolio.png"
+    },
+    {
+        "id": 7,
+        "name": "Student Success Pack",
+        "description": "Affordable toolkit for students and showcase academic achievements.",
+        "price": 4.99,
+        "period": "Month",
+        "tag": "Student Choice",
+        "tagType": "new",
+        "features": [
+            "Student resume templates",
+            "Internship application tools",
+            "Certificate organizer",
+            "PDF export",
+            "Cloud backup"
+        ],
+        "icon": "GraduationCap",
+        "image": "https://i.ibb.co.com/pBzFKfGC/design-tool.png",
+        "alt": "design-tool.png"
+    },
+    {
+        "id": 8,
+        "name": "Job Hunter Max",
+        "description": "Boost your job search with AI-powered resume analysis and application tracking.",
+        "price": 19.99,
+        "period": "Month",
+        "tag": "Editor's Pick",
+        "tagType": "best-seller",
+        "features": [
+            "AI resume score",
+            "Keyword optimization",
+            "Job tracker",
+            "Interview scheduler",
+            "Email application templates"
+        ],
+        "icon": "SearchCheck",
+        "image": "https://i.ibb.co.com/FTPLLkf/operation.png",
+        "alt": "operation.png"
+    }
+]

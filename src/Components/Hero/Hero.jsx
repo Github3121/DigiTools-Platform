@@ -1,11 +1,11 @@
 import React from 'react';
 import './Hero.css';
-import { Play } from 'lucide-react';
+import { ArrowRight, Play } from 'lucide-react';
 
 const Hero = () => {
     return (
         <div className="hero bg-base-200 min-h-screen">
-            <div className="hero-content flex-col lg:flex-row-reverse">
+            <div className="hero-content flex-col lg:flex-row-reverse lg:gap-[60px]">
                 <img
                     src="https://i.ibb.co.com/HDdTFF54/banner.png"
                     className="max-w-sm rounded-lg shadow-2xl"
@@ -27,7 +27,7 @@ const Hero = () => {
                         Explore Products
                     </p>
                     <div>
-                        <button className="btn btn-primary rounded-full py-[15px] px-4 text-4 font-bold text-white">Explore Products</button>
+                        <button className="btn btn-primary bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full py-[15px] px-4 text-4 font-bold text-white gap-[10px]">Explore Products<ArrowRight size={20} /></button>
                         <button className="btn btn-outline btn-primary ml-4 py-[15px] px-4 text-4 font-bold rounded-full gap-[10px]"><Play size={20} />Watch Demo</button>
                     </div>
                 </div>
